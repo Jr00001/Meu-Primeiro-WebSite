@@ -1,0 +1,291 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #222;
+    line-height: 1.6;
+
+    /* fundo com a imagem do ar-condicionado */
+    background-image: url('ar-condicionado.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Mantém o título das marcas em vermelho */
+.marcas-titulo {
+    text-align: center;
+    color: #cc0000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* LINKS */
+a {
+    color: #cc0000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+/* lista de marcas - imagens */
+.marcas img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* container das marcas */
+.lista-marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto 25px auto;
+  padding: 0;
+  list-style: none;
+  align-items: start;
+  justify-items: center;
+}
+
+/* cada card das marcas */
+.lista-marcas li {
+  width: 100%;
+  max-width: 220px;
+  background: transparent; /* fundo transparente */
+  padding: 14px;
+  border-radius: 8px;
+  border-left: 4px solid #cc0000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+/* imagens das marcas */
+.lista-marcas img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* HEADER - mantendo branco, mas as letras vermelhas */
+header {
+    background: transparent;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: none;
+}
+
+/* TÍTULO COM COR VERMELHA */
+header h1 {
+    font-size: 3em;
+    color: #cc0000; /* vermelho */
+    font-weight: bold;
+    padding: 10px 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin: 0 0 15px 0;
+    letter-spacing: 3px;
+}
+
+/* SUBTÍTULO */
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #222; 
+    opacity: 0.9;
+}
+
+/* MENU */
+nav {
+    background-color: #cc0000;
+    padding: 12px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+nav a:hover::after {
+    left: 0;
+}
+
+/* CONTEÚDO PRINCIPAL - fundo TRANSPARENTE e texto vermelho */
+main {
+    max-width: 960px;
+    margin: 25px auto;
+    padding: 22px;
+    background: transparent; /* fundo transparente */
+    border-radius: 8px;
+    color: #cc0000;
+}
+
+/* TÍTULOS INTERNOS */
+main h2 {
+    color: #cc0000;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ASIDE */
+aside {
+    background: transparent; /* fundo transparente */
+    padding: 20px;
+    border-radius: 10px;
+    color: #cc0000; /* texto vermelho */
+}
+
+aside h3 {
+    color: #cc0000;
+    margin-top: 0;
+    border-bottom: 1px solid #cc0000;
+    padding-bottom: 10px;
+}
+
+/* BOTÃO */
+main button {
+    display: block;
+    margin: 30px auto;
+    background-color: #cc0000;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    transition: all 0.3s ease-in-out;
+}
+main button:hover {
+    background-color: #990000;
+    transform: translateY(-3px);
+}
+
+/* Centraliza conteúdo da seção */
+.centralizado {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Títulos vermelhos centralizados */
+.centralizado h2 {
+    color: #cc0000;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Lista de serviços */
+.lista-servicos {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 25px auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.lista-servicos li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+/* Lista de marcas (centralizada) */
+.lista-marcas {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.lista-marcas li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent; /* fundo transparente */
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #cc0000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #cc0000;
+}
+
+/* Botões centralizados */
+.central-btn {
+    display: inline-block;
+    background-color: #cc0000;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.central-btn:hover {
+    background-color: #990000;
+    transform: translateY(-3px);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1a1a1a;
+    color: #dddddd;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.4);
+}
+footer p {
+    margin: 5px 0;
+}
+
+
